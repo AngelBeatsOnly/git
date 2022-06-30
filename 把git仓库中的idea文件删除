@@ -1,0 +1,21 @@
+1.配置.gitignore文件(新建/编辑）
+
+常用的.gitignore文件简短配置：
+
+1 .project .settings/ .prefs .pydevproject .idea/ .idea .DS_Store .cache *.pyc *.html *.xlm
+
+2.将.gitignore文件上传到远程仓库
+
+1 git pull git add .gitignore git commit -m ‘edit .gitignore’
+  git push origin master
+
+3.删除git的.idea文件
+
+1 git rm –cached -r .idea
+
+4.同步到远程仓库
+
+1 git commit -m ‘delete .idea’
+  git push origin master
+
+完成之后就可以发现git仓库中的.idea文件已经被删除，而且之后push代码也不会再把.idea文件上传。
